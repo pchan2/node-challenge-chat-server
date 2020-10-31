@@ -90,4 +90,4 @@ app.delete("/messages/:id", function (req, res) {
   res.json("Message " + id + " deleted");
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
